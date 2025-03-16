@@ -12,7 +12,7 @@ export default function AdminLogin() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        "https://round-robin-distribution.onrender.com/api/admin/login",
         credentials
       );
       localStorage.setItem("token", res.data.token);

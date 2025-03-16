@@ -7,7 +7,7 @@ export default function Home() {
 const [coupon, setCoupon] = useState("");
   const claimCoupon = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/coupons/claim");
+      const res = await axios.get("https://round-robin-distribution.onrender.com/api/coupons/claim");
       setMessage(res.data.message);
       setCoupon(res.data.coupon);
     } catch (err) {

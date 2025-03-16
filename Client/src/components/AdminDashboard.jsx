@@ -12,9 +12,9 @@ export default function AdminDashboard() {
   }, []);
 
   const fetchCoupons = async () => {
-    const res = await axios.get("http://localhost:5000/api/admin/coupons");
+    const res = await axios.get("https://round-robin-distribution.onrender.com/api/admin/coupons");
     const claimed = await axios.get(
-      "http://localhost:5000/api/admin//coupons/claimed"
+      "https://round-robin-distribution.onrender.com/api/admin//coupons/claimed"
     );
     setCoupons(res.data);
     setClaimedCoupons(claimed.data);
@@ -24,7 +24,7 @@ export default function AdminDashboard() {
 
   const addCoupon = async () => {
     if (!newCoupon) return;
-    await axios.post("http://localhost:5000/api/admin/coupons", {
+    await axios.post("https://round-robin-distribution.onrender.com/api/admin/coupons", {
       code: newCoupon,
     });
     setNewCoupon("");
@@ -32,7 +32,7 @@ export default function AdminDashboard() {
   };
 
   const deleteCoupon = async (id) => {
-    await axios.delete(`http://localhost:5000/api/admin/coupons/${id}`);
+    await axios.delete(`https://round-robin-distribution.onrender.com/api/admin/coupons/${id}`);
     fetchCoupons();
   };
 
