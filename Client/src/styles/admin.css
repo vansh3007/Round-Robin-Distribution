@@ -1,0 +1,176 @@
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.adminLoginInput {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.adminLoginButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5vh;
+  transition: background-color 0.3s ease;
+}
+
+.adminLoginButton:hover {
+  background-color: #0056b3;
+}
+
+.error{
+  color: red;
+}
+
+
+
+
+/* src/styles/home.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.coupon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.claim-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.claim-button:hover {
+  background: #0056b3;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+}
+
+.status-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.success-btn, .error-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.success-btn {
+  background: #28a745;
+  color: white;
+}
+
+.error-btn {
+  background: #dc3545;
+  color: white;
+}
+
+/* src/styles/admin.css */
+.admin-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.coupon-section, .claim-history {
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+}
+
+a{
+  text-decoration: none;
+  
+}
+.admin-icon {
+  margin-left: 5px;
+  color: #dc3545;
+}
+
+
+.couponBox{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+td{
+  padding: 5px;
+  font-size: small;
+}
+
+th{
+  padding: 5px;
+  font-size: small;
+}
+
+.addCouponContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
